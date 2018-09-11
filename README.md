@@ -3,7 +3,7 @@
 This project follows TEI 5 Guidelines for XML based text-encoding to create a digital version of an extract from the book: *"The Travels of Marco Polo"*. This encoding format provides semantic elements which allows a formal (and detailed) definition and description of a large variety of literary and linguistic texts. The result is an enhanced digital version of the encoded text.
 
 ------------
-###### Created on: 04/2018
+###### Created on: 04/2018 / Live version: https://lukasd2.github.io/Travels-of-Marco-Polo/progetto.html
 ------------
 ### Technologies/features:
 
