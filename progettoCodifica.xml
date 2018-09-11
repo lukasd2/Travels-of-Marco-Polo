@@ -1,0 +1,945 @@
+<?xml version="1.0"?>
+<?xml-model href="progettoCodifica.rng" type="application/xml"?>
+<?xml-stylesheet type="text/xsl" href="progetto.xsl"?>  
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="it">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Il Milione</title>
+                <author>Marco Polo</author>
+                <respStmt>
+                    <resp>Codifica dei capitoli 89-106 (compresi) di Il Milione di Marco Polo</resp>
+                    <name>Lukasz Szczygiel</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher/> 
+                <idno type="ISBN">88-06-05323-X</idno>
+                <availability status="restricted">
+                    <licence>
+                        <p>Copyright &#169; 1977 Giulio Einaudi editore s.p.a., Torino</p>
+                        <p>Per l'introduzione e le note</p>
+                        <p>Copyright &#169; 1982 Giulio Einaudi editore s.p.a., Torino</p>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>
+                    <author>Marco Polo</author>
+                    <title>IL MILIONE</title>
+                    <editor role="curator" xml:id="MVM">Maria Vittoria Malvano</editor>
+                    <publisher>Giulio Einaudi editore</publisher>
+                    <edition>Prima edizione nella Biblioteca Giovani, <date when="1977">1977</date>
+                    </edition>
+                    <edition>Prima edizione in Letture per la scuola media, <date when="1982">1982</date>, Terza edizione, <date when="1983">1983</date>
+                    </edition>
+                </bibl>
+                <!-- List of provinces-->
+                <listPlace type="provinces">
+                    <place xml:id="pr-Cat">
+                        <placeName>Catai</placeName>
+                    </place>
+                    <place xml:id="pr-Man">
+                        <placeName>Mangi</placeName>
+                    </place>
+                    <place xml:id="pr-Pec">
+                        <placeName>Pechoili</placeName>
+                    </place>
+                    <place xml:id="pr-Tai">
+                        <placeName>Taianfu</placeName>
+                    </place>
+                    <place xml:id="pr-Sha">
+                        <placeName>Shansi</placeName>
+                    </place>                
+                    <place xml:id="pr-Sze">
+                        <placeName>Szechuan</placeName>
+                    </place>
+                    <place xml:id="pr-Con">
+                        <placeName>Concun</placeName>
+                    </place>
+                    <place xml:id="pr-Acb">
+                        <placeName>Acbaluc Mangi</placeName>
+                    </place>
+                    <place xml:id="pr-Sin">
+                        <placeName>Sindufu</placeName>
+                    </place>
+                    <place xml:id="pr-Teb">
+                        <placeName>Tebet</placeName>
+                    </place>
+                    <place xml:id="pr-Yun">
+                        <placeName>Yunnan</placeName>
+                    </place>
+                    <place xml:id="pr-Gai">
+                        <placeName>Gaindu</placeName>
+                    </place>
+                    <place xml:id="pr-Car">
+                        <placeName>Caragian</placeName>
+                    </place> 
+                    <place xml:id="pr-Zar">
+                        <placeName>Zardandan</placeName>
+                    </place>
+                    <place xml:id="pr-Mie">
+                        <placeName>Mien</placeName>
+                    </place>
+                </listPlace>
+                <!-- List of cities-->
+                <listPlace type="cities">
+                    <place xml:id="ci-Cam">
+                        <placeName>Cambaluc</placeName>
+                    </place>
+                    <place xml:id="ci-Giu">
+                        <placeName>Giongiu</placeName>
+                    </place>
+                    <place xml:id="ci-Tai">
+                        <placeName>Taianfu</placeName>
+                    </place>
+                    <place xml:id="ci-Pia">
+                        <placeName>Pianfu</placeName>
+                    </place>
+                    <place xml:id="ci-Cac">
+                        <placeName>Cacianfu</placeName>
+                    </place>
+                    <place xml:id="ci-Che">
+                        <placeName>Chengianfu</placeName>
+                    </place>
+                    <place xml:id="ci-Han">
+                        <placeName>Han-chung</placeName>
+                    </place>
+                    <place xml:id="ci-Sin">
+                        <placeName>Sindufu</placeName>
+                    </place>
+                    <place xml:id="ci-Teb">
+                        <placeName>Tebet</placeName>
+                    </place>
+                    <place xml:id="ci-Iac">
+                        <placeName>Iaci</placeName>
+                    </place>
+                    <place xml:id="ci-Voc">
+                        <placeName>Vocian</placeName>
+                    </place>
+                    <place xml:id="ci-Mie">
+                        <placeName>Mien</placeName>
+                    </place>
+                </listPlace>
+                <!-- GeogNames, esempio di codifica non utilizzato
+                <listPlace type="river">
+                    <place xml:id="ri-Hua">
+                        <placeName type="main">Huang-ho</placeName>
+                        <placeName type="alt">Sang-kan</placeName>
+                    </place>
+                </listPlace>-->
+                <!-- List of people  -->
+                <listPerson type="historical">
+                    <person xml:id="GC">
+                        <persName>
+                            <forename>Cubilai</forename>
+                            <addName>Gran</addName>
+                            <roleName>Can</roleName>
+                        </persName>
+                    </person>
+                    <person xml:id="MP">
+                        <persName>
+                            <forename>Marco</forename>
+                            <surname>Polo</surname>
+                        </persName>
+                    </person>
+                    <person xml:id="RD">
+                        <persName>
+                            <roleName>re</roleName>
+                            <genName>Dor</genName>
+                        </persName>
+                    </person>
+                    <person xml:id="PG">
+                        <persName>
+                            <roleName>Prete</roleName>
+                            <forename>Gianni</forename>
+                        </persName>
+                    </person>
+                    <person xml:id="MC">
+                        <persName>
+                            <forename>Mongu</forename>
+                            <roleName>Can</roleName>
+                        </persName>
+                    </person>
+                    <person xml:id="MA">
+                        <persName>
+                            <roleName>re</roleName>
+                            <forename>Malangai</forename>
+                        </persName>
+                    </person>
+                    <person xml:id="CC">
+                        <persName>
+                            <forename>Cinghys</forename>
+                            <roleName>Can</roleName>
+                        </persName>
+                    </person>
+                </listPerson>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <normalization>
+                    <p>Nella versione trecentesca dell'&lt;&lt;Ottimo&gt;&gt;<lb/> resa in italiano moderno</p>
+                </normalization>
+                <p>Questa codifica è una ricostruzione fedele di alcuni capitoli del libro "Il Milione" di Marco Polo.
+                    È stata mantenuta la formattazione originale del libro compresa la divisione delle pagine e dei capitoli.
+                    Sono stati codificati i nomi dei personaggi, i luoghi geografici (in particolare le provincie e le città) con l'utilizzo del modulo namesdates.
+                    Inoltre con l'aggiunta della mappa interattiva, delle liste di occorrenze di nomi e luoghi geografici e del collegamento 
+                    delle note ai riferimenti nel testo, si cerca di rendere la visione più interessante e informativa.</p>                
+            </editorialDecl>
+        </encodingDesc>
+    </teiHeader>
+    <text>
+        <front>
+            <titlePage>
+                <byline>
+                    <docAuthor>
+                        <name type="main">MARCO POLO</name>
+                    </docAuthor>
+                </byline>
+                <docTitle>
+                    <titlePart type="main">IL MILIONE</titlePart>
+                </docTitle>
+                <docImprint>
+                    <pubPlace>Milano</pubPlace>
+                    <lb/>
+                    <publisher>Giulio Einaundi editore</publisher>
+                    <lb/>
+                    <date when="1904">1904</date>
+                </docImprint>
+            </titlePage>
+        </front>
+        <body>
+            <!--
+            <p>My TEI Customization&#xD; starts with modules tei, core, textstructure and header</p>
+            <schemaSpec ident="progettoCodifica" docLang="en" prefix="tei_" xml:lang="en">
+                <moduleRef key="core" except=""/>
+                <moduleRef key="tei" except=""/>
+                <moduleRef key="header" except=""/>
+                <moduleRef key="textstructure" except=""/>
+                <moduleRef key="namesdates" except=""/>
+            </schemaSpec>-->
+            
+            <div type="chapter" n="89">
+                <head><num value="89">89</num>. Della provincia del <placeName ref="#pr-Cat"><region type="province">Catai</region></placeName>.</head>
+                <p> Dovete sapere che il <persName ref="#GC"><addName type="epithet">Gran</addName>
+                        <roleName>Can</roleName></persName> mandò come ambasciatore verso ponente
+                    messer <persName ref="#MP"><forename>Marco</forename></persName>, vi racconterò quindi
+                    tutto ciò che vide sul suo cammino andando e tornando. Chi parte da
+                            <placeName ref="#ci-Camb"><settlement type="city">Cambaluc</settlement></placeName>,
+                    dopo una <measure>decina di <pb n="122"/> miglia</measure> trova un fiume
+                    chiamato <geogName type="river">Pulisanghin</geogName><ref target="#ch89_a1"
+                        type="noteAnchor"><hi rend="superscript">1</hi></ref>. Questo fiume si getta
+                    nel <geogName type="ocean">Mare Oceano</geogName><ref target="#ch89_a2"
+                        type="noteAnchor"><hi rend="superscript">2</hi></ref> e di qui passano
+                    numerosi mercanti con numerose merci.; sul fiume c’è un bellissimo ponte in
+                    pietra. Vi dico che non ce n’è un altro al mondo fatto così: è lungo ben
+                        <measure type="length">tredici passi</measure> e largo <measure type="width"
+                        >otto</measure>, vi possono quindi passare ben <num value="10">dieci</num>
+                    cavalieri affiancati l’uno all’altro; ha <num value="24">ventiquattro</num>
+                    archi e <num value="24">ventiquattro</num> piloni nell’acqua ed è tutto di
+                    marmo, e ora vi descriverò come sono fatte le colonne. A una estremità del ponte
+                    si erge <num value="1">una</num> colonna di marmo e sotto la colonna c’è un
+                    leone pure di marmo e sopra la colonna ce n’è un altro, molto belli e grandi e
+                    ben fatti; alla distanza di <measure><num value="1">un</num> passo</measure> dalla colonna ce n’è
+                    un’altra uguale alla precedente e lo spazio tra le <num value="2">due</num> è
+                    chiuso da lastre di maro, sì da formare un parapetto affinché non si cada
+                    nell’acqua; e così via per tutta la lunghezza del ponte; è una cosa bellissima a
+                    vedersi. Vi ho descritto il ponte, ora vi racconterò altre novità. </p> 
+                <note xml:id="ch89_a1" type="footnote">1. Pare che <persName ref="#MP"><forename>Marco</forename> <surname>Polo</surname></persName> abbia equivocato, dando al
+                    fiume il nome che designava invece il ponte, equivoco che sarebbe stato
+                    facilitato dal fatto che il fiume, lo <geogName type="river">Huang-ho</geogName>, è anche chiamato <soCalled><geogName type="river">Sang-kan</geogName></soCalled>. Il
+                    ponte di cui parla <persName><forename>Marco</forename> <surname>Polo</surname></persName> fu distrutto nel <date when="1688">1668</date>. La forma
+                    persiana del fiume è <geogName xml:lang="pers" type="river">Sanghin</geogName>, e <term xml:lang="pers">puli</term> in persiano vuol dire ponte pertanto è
+                    facile rintracciare in <term xml:lang="pers">Pulisanghin</term> l’equivalente di il ponte sul fiume
+                    <geogName type="river">Sanghin</geogName>.</note>
+                <note xml:id="ch89_a2" type="footnote">2. <geogName type="ocean">L’Oceano Pacifico</geogName>.</note>
+            </div>
+            
+            <div type="chapter" n="90">
+                <head><num value="90">90</num>. Della grande città del <placeName ref="#ci-Giu"><settlement type="city">Giongiu</settlement></placeName>.</head>
+                <p> Quando il viaggiatore lascia il ponte e cammina per <measure><num value="30">trenta</num>
+                    miglia</measure> verso ponente trova lungo la via belle case, alberghi, <note type="addition" resp="#MVM">e
+                        alberi</note> e vigne; qui trova una città chiamata <placeName ref="#ci-Giu"><settlement type="city"
+                            >Giongiu</settlement></placeName>
+                    <ref target="#ch90_a1" type="noteAnchor"><hi rend="superscript">1</hi></ref>,
+                    grande e bella. Vi sono numerose badie e idolatri. Gli abitanti vivono di
+                    commercio e <pb n="123"/> artigianato: si fabbricano drappi in seta e oro e bei
+                    veli. Vi sono begli alberghi. Oltrepassata questa città di <measure><num value="1">un</num>
+                        miglio</measure> si trova un bivio: una strada va verso ponente e l’altra
+                    verso scirocco. Quello verso ponente porta al <placeName ref="#pr-Cat"><region type="province">Catai</region></placeName>, l’altra verso scirocco porta <note type="addition" resp="#MVM">verso il grande mare</note> alla
+                    estesa provincia del <region type="province" ref="#pr-Man">Mangi</region><ref target="#ch90_a2" type="noteAnchor"><hi rend="superscript">2</hi></ref>. Dovete sapere che
+                    chi cavalca verso ponente impiega <num value="10">dieci</num> giorni per
+                    arrivare alla provincia del <placeName ref="#pr-Cat"><region type="province">Catai</region></placeName>, incontrando
+                    sul suo cammino belle città e bei castelli che prosperano per il commercio e
+                    l’artigianato, e bei vigneti <note type="addition" resp="#MVM">e molti alberi</note> e popoli civili. Qui non c’è altro
+                    da ricordare, perciò ci allontaniamo per andare verso un regno chiamato <placeName ref="#pr-Tai"><region
+                        type="province">Taianfu</region></placeName><ref target="#ch90_a3" type="noteAnchor"><hi rend="superscript">3</hi></ref>. </p>
+                <note xml:id="ch90_a1" type="footnote">1. È la città di <placeName ref="#ci-Giu"><settlement>
+                    Cho-chou</settlement></placeName>, nella provincia
+                    della <placeName><region>Cina settentrionale</region></placeName> un tempo chiamata <placeName ref="#pr-Pec"><region type="province">Pechoili</region></placeName>, ora <placeName ref="#pr-Pec"><region type="province" ref="#pr-Pec">Hopei</region></placeName>.</note>
+                <note xml:id="ch90_a2" type="footnote">2. Questo termine è la corruzione del cinese
+                    <term xml:lang="chinese">Man-tzu</term>, con cui si indicavano dapprima le tribù della <placeName><region>Cina meridionale</region></placeName> non
+                    cinesi, poi la <placeName><region>Cina meridionale</region></placeName> in genere e il regno dei <genName type="dynasty">Song</genName> dei secoli
+                    <date notBefore="0901" notAfter=" 1300">X-XIII</date>.</note>
+                <note xml:id="ch90_a3" type="footnote">3. O <soCalled>Tay-yuen fu</soCalled>, regno e città ora compresi
+                    nella provincia dello <placeName ref="#pr-Sha"><region type="province">Shansi</region></placeName>, sul fiume <geogName type="river">Fu</geogName>, affluente del <geogName type="river">Fiume Giallo</geogName>. La
+                    città, fondata come cittadella difensiva contro i Mongoli, fu sempre di grande
+                    importanza per la sua posizione al centro di una pianura assai fertile; la
+                    provincia è ricca di miniere di carbone.</note>
+            </div>
+            
+            <div type="chapter" n="91">
+                <head><num value="91">91</num>. Dal regno di <placeName ref="#pr-Tai"><region type="province">Taianfu</region></placeName>.</head>
+                <p>Partendo da questa città di <placeName ref="#ci-Giu"><settlement type="city">Giongiu</settlement></placeName>, cavalcando per <num value="10">dieci</num> giornate si trova un
+                    regno chiamato <placeName ref="#pr-Tai"><region type="province">Taianfu</region></placeName>. E capitale della provincia a cui siamo giunti è una
+                    città chiamata <placeName ref="#ci-Tai"><settlement type="city">Taianfu</settlement></placeName> ricca di commerci e industrie; qui si fabbricano molti
+                    arnesi necessari all’esercito del gran signore. Qui vi è abbondante vino e per
+                    tutta la provincia del <placeName ref="#pr-Cat"><region type="province" >Catai</region></placeName> solo in questa città si trova del vino, qui si
+                    riforniscono tutte le provincie limitrofe. Vi si produce seta in abbondanza
+                    perché vi sono molti gelsi e molti bachi. Quando si lascia <placeName ref="#pr-Tai"><region type="province">Taianfu</region></placeName> si cavalca
+                    verso ponente per <num value="7">sette</num> giornate, attraverso belle contrade con molte città e
+                    castelli ricchi di commerci e di <pb n="124"/> industrie. Alla fine delle <num value="7">sette</num>
+                    giornate si trova una città che si chiama <placeName ref="#ci-Pia"><settlement type="city">Pianfu</settlement></placeName><ref target="#ch91_a1" type="noteAnchor"><hi rend="superscript">1</hi></ref>, dove ci sono molti mercanti,
+                    dove si produce molta seta e altri manufatti. Ora lasciamo questa città e vi
+                    parlerò di un castello chiamato <name type="castle">Caiciu</name>.<ref target="#ch91_a2" type="noteAnchor"><hi rend="superscript">2</hi></ref> </p>
+                <note xml:id="ch91_a1" type="footnote">1. O <soCalled>Ping-yang</soCalled> fu città dello <placeName ref="#pr-Sha"><region type="province">Shansi</region></placeName>, sul
+                    fiume <geogName type="river">Fuen-ho</geogName></note>
+                <note xml:id="ch91_a2" type="footnote">2. Non identificato con sicurezza. Secondo
+                    alcuni corrisponde a <name type="castle">Chiang-chou</name>.</note>
+            </div>
+            
+            <div type="chapter" n="92">
+                <head><num value="92">92</num>. Del castello di <name type="castle">Caiciu</name>.</head>
+                <p>Quando ci si allontana da <placeName ref="#ci-Pia"><settlement type="city">Pianfu</settlement></placeName>, e si va verso ponente per <num value="2">due</num> giornate, si
+                    incontra un bel castello<ref target="#ch92_a1" type="noteAnchor"><hi rend="superscript">1</hi></ref> chiamato <name type="castle">Caiciu</name>; lo fece costruire un re detto <soCalled><persName ref="#RD"><roleName>re</roleName> 
+                        <genName>Dor</genName></persName></soCalled><ref target="#ch92_a2" type="noteAnchor"><hi rend="superscript">2</hi></ref>.
+                    In questo castello vi è un palazzo molto bello, con una magnifica sala in cui
+                    sono raffigurati con grande perfezione tutti i re che anticamente hanno
+                    governato quel territorio.; è una cosa molto bella da vedere. Di questo <persName ref="#RD"><addName type="epithet">re</addName>
+                        <genName>Dor</genName></persName> 
+                    vi racconterò una storia molto bella, di un fatto che avvenne tra lui e <persName ref="#PG"><roleName>Prete</roleName> <forename>Gianni</forename></persName>
+                    <ref target="#ch92_a3" type="noteAnchor"><hi rend="superscript">3</hi></ref>. Questo castello è così fortificato che <persName ref="#PG"><roleName>Prete</roleName> <forename>Gianni</forename></persName> non poteva
+                    espugnarlo e, a quanto dicevano gli abitanti del paese, era in guerra con il re.
+                    <persName ref="#PG"><roleName>Prete</roleName> <forename>Gianni</forename></persName> era assai irritato; sette servitori allora gli dissero che, se lui
+                    voleva, gli avrebbero portato il <persName ref="#RD"><roleName>re</roleName> <genName>Dor</genName></persName> vivo; <persName ref="#PG"><roleName>Prete</roleName> <forename>Gianni</forename></persName> rispose che accettava
+                    volentieri. Udito questo i servitori si recarono alla corte del <persName ref="#RD"><roleName>re</roleName> <genName>Dor</genName></persName> e gli
+                    dissero che essi <note type="addition" resp="#MVM">erano di una terra straniera</note> ed erano venuti per servirlo.
+                    Egli rispose loro che erano i benvenuti, che gli <pb n="125"/> facevano un
+                    piacere e un servizio; e così i <num value="7">sette</num> valletti di <persName ref="#PG"><roleName>Prete</roleName> <forename>Gianni</forename></persName> si misero alle
+                    dipendenze del <persName ref="#RD"><roleName>re</roleName> <genName>Dor</genName></persName>. Si fermarono presso di lui <num value="2">due</num> anni ed erano molto amati
+                    dal re per il servizio che gli avevano reso: li considerava tutti e <num value="7">sette</num> come
+                    figli suoi. Udite invece che cosa gli fecero quei malvagi, nessuno infatti
+                    riesce a guardarsi dai traditori. Un giorno il re si stava divertendo con pochi
+                    amici fidati, tra cui quei <num value="7">sette</num>; quando ebbero attraversato un fiume distante
+                    dal palazzo di cui ho parlato prima e quelli videro che non c’era nessuno che
+                    potesse difendere il re, misero mano alla spada e dissero che lo avrebbero
+                    ucciso se egli non andava con loro. Vedendo questo, il re si stupì moltissimo e
+                    disse: 
+                    <q type="spoken">- Che succede, figlioli miei? Perché mi fate questo? Dove volete che io
+                        vada?</q> – Risposero: <q type="spoken">Vogliamo che veniate dal <persName ref="#PG"><roleName>Prete</roleName> <forename>Gianni</forename></persName>, che è il nostro
+                    signore.</q></p>
+                <note xml:id="ch92_a1" type="footnote">1. Qui ha il significato di villaggio fortificato, cinto da mura.</note>
+                <note xml:id="ch92_a2" type="footnote">2. Cioè <soCalled>"re dell’oro"</soCalled>. <persName><forename>Marco</forename> <surname>Polo</surname></persName> traduce
+                    così il nome della dinastia <genName type="dynasty">Chin</genName>, che significa "oro". Furono gli <genName type="dynasty">Jurcen</genName> a
+                    scegliere questo appellativo quando il loro <roleName>sovrano</roleName> <surname>Akuta</surname> <date from="1113" to="1123">(1113-23)</date> fondò
+                    l’impero che comprendeva la <placeName><region>Manciuria sudorientale </region></placeName>e la <placeName><region>Cina
+                        settentrionale</region></placeName>.</note>
+                <note xml:id="ch92_a3" type="footnote">3. Vedi <num value="52">52</num>, nota <num value="3">3</num>.</note>
+            </div>
+            
+            <div type="chapter" n="93">
+                <head><num value="93">93</num>. Come <persName ref="#PG"><roleName>Prete</roleName> <forename>Gianni</forename></persName> fece prendere il <persName ref="#RD"><roleName>re</roleName> <genName>Dor</genName></persName>.</head>
+                <p>Quando il re udì ciò che costoro gli dissero, per poco non morì di dolore e
+                    disse: <q type="spoken">- Deh! figlioli, non vi ho forse onorato abbastanza? Perché mi volete
+                    mettere nelle mani del mio nemico?</q> - Quelli risposero che doveva essere così.
+                    Allora lo condussero dal <persName ref="#PG"><roleName>Prete</roleName> <forename>Gianni</forename></persName>. Quando lo vide, ne ebbe grande gioia e
+                    gli disse che era il <soCalled>"mal venuto"</soCalled>, al che il re non seppe che cosa ribattere.
+                    Poi <persName ref="#PG"><roleName>Prete</roleName> <forename>Gianni</forename></persName> ordinò che fosse messo a custodire le bestie e così fu fatto.
+                    Quest’ordine lo aveva dato per dispetto <note resp="#MVM" type="addition">sempre tenendo ben d’occhio</note>. Quando il
+                    re ebbe custodito le bestie per ben <num value="2">due</num> anni, <persName ref="#PG"><roleName>Prete</roleName> <forename>Gianni</forename></persName> se lo fece venire
+                    innanzi, gli fece dare ricchi abiti e gli rese grandi onori; poi gli disse: <q type="spoken">-
+                    Signor re, tu stesso puoi vedere che non sei uomo da fare guerra a me</q> - Rispose
+                    il re: <q type="spoken">- Ho sem- <pb n="126"/> pre saputo che non ero in grado di farlo</q> - Allora
+                    <persName ref="#PG"><roleName>Prete</roleName> <forename>Gianni</forename></persName> disse: <q type="spoken">- Non ti voglio più dare fastidio; d’ora in poi voglio solo
+                    farti piacere e onorarti</q>. Dopo di che gli donò bellissimi arnesi e cavalli e un
+                    numeroso seguito e lo lasciò andare. Il re tornò al suo regno e da quel momento
+                    gli fu amico e sottomesso. </p>
+            </div>
+            
+            <div type="chapter" n="94">
+                <head><num value="94">94</num>. Del gran fiume <geogName type="river">Caramoran</geogName><ref target="#ch94_a1" type="noteAnchor"><hi rend="superscript">1</hi></ref>.</head>
+                <p> E quando si parte da questo castello e su va versi ponente <num value="20">venti</num> miglia, si
+                    trova un fiume che è chiamato <geogName type="river">Caramoran</geogName>, un fiume così grande che non lo si può
+                    attraversare su un ponte, e va fino al <geogName type="ocean">Mare Oceano</geogName>. Lungo il fiume ci sono molte
+                    città e castelli, dove abitano numerosi mercanti e artigiani. Nel territorio
+                    adiacente al fiume cresce abbondante lo zenzero<ref target="#ch94_a2" type="noteAnchor"><hi rend="superscript">2</hi></ref>; e vi sono tanti uccelli che è
+                    una meraviglia: per una moneta, che si chiama vaspre<ref target="#ch94_a3" type="noteAnchor"><hi rend="superscript">3</hi></ref> e vale quanto un veneziano<ref target="#ch94_a4" type="noteAnchor"><hi rend="superscript">4</hi></ref>
+                    , si possono avere <num value="3">tre</num> fagiani. Varcato questo fiume, se si prose- <pb n="127"/>
+                    gue ancora per <num value="2">due</num> giornate, si trova una nobile città chiamata <placeName ref="#ci-Cac"><settlement type="city">Cacianfu</settlement></placeName><ref target="#ch94_a5" type="noteAnchor"><hi rend="superscript">5</hi></ref>. Gli
+                    abitanti sono tutti idolatri; il paese è ricco di commerci e industrie vi è
+                    molta seta; vi si fabbricano drappi di seta e d’oro. Non ci sono cose notevoli
+                    da ricordare: pertanto ce ne andiamo e vi parlerò di una nobile città che è al
+                    limite del regno di <placeName ref="#ci-Che"><settlement type="city">Chengianfu</settlement></placeName><ref target="#ch94_a6" type="noteAnchor"><hi rend="superscript">6</hi></ref>. </p>
+                <note xml:id="ch94_a1" type="footnote">1. Nome tartaro (<term xml:lang="turco">Karamuren</term> significa <geogName type="river">Fiume Nero</geogName>)
+                    dello <geogName type="river">Huang-ho</geogName> o <geogName type="river">fiume Giallo</geogName>. È il secondo fiume della <placeName><region type="country">Cina</region></placeName> per importanza:
+                    nasce sull’altopiano del <placeName ref="#pr-Teb"><region type="province">Tibet</region></placeName>, presso i laghi <geogName type="lake">Djanning Nor</geogName> e <geogName type="lake">Oring Nor</geogName>, e dopo
+                    un corso di <measure type="lenght"><num value="500">5000</num> km </measure>sfocia nel <geogName type="sea">Mar Giallo</geogName> a nord della penisola dello Shantung.
+                    Il bacino formato dal <geogName type="river">Fiume Giallo</geogName> e dai suoi affluenti costituisce un
+                    territorio molto fertile, ma soggetto alle gravi inondazioni provocate dai
+                    frequenti straripamenti del fiume.</note>
+                <note xml:id="ch94_a2" type="footnote">2. Pianta delle Zinziberacee che cresce in
+                    tutta l’<region type="area">Asia tropicale</region>; dalla radice si estrae una sostanza usata in farmacia
+                    come digestivo e in cucina come aroma.</note>
+                <note xml:id="ch94_a3" type="footnote">3. Cioè <soCalled>"aspro"</soCalled>, una piccola moneta d’argento
+                    molto diffusa nei possedimenti della <placeName><region type="region">Repubblica Veneta</region></placeName>, che l’aveva coniata per
+                    i suoi commerci con il Levante. Il nome, che deriva dal greco <term xml:lang="greek">aspros</term> cioè
+                    <soCalled>"bianco"</soCalled>, era dovuto al fatto che tali monete erano più brillanti di quelle fino
+                    allora in circolazione: infatti erano coniate con argento cinese che conteneva
+                    una percentuale di antimonio, una lega che arrivava in grande quantità
+                    dall’<region type="area">Estremo Oriente</region> trasportata dalle carovane.</note>
+                <note xml:id="ch94_a4" type="footnote">4. Cioè il grosso veneziano. Vedi <num value="81">81</num>, nota <num value="5">5</num></note>
+                <note xml:id="ch94_a5" type="footnote">5. È la città chiamata <soCalled>Ho-kien</soCalled> fu dai Mongoli
+                    e <soCalled xml:lang="chinese">Pu-chou</soCalled> dai Cinesi, nella provincia di <region type="province" ref="#pr-Pec">Hopei</region> (o <region type="province" ref="#pr-Pec">Pechili</region>). Si trovava su una
+                    delle vie dei corrieri imperiali, quella da <settlement type="city">Pechino</settlement> e <settlement type="city">Hang-chou</settlement>.</note>
+                <note xml:id="ch94_a6" type="footnote">6. L’odierna <settlement type="city">Hsi-an</settlement>, capitale dello <placeName ref="#pr-Sha"><region type="province">Shansi</region></placeName>,
+                    nota fin dall’epoca <genName type="dynasty">Tang</genName> sotto il nome di <soCalled>Ching-chao fu</soCalled>. Divenne capitale nel
+                    <date when="1262">1262</date> della provincia creata dai Mongoli unendo lo <placeName ref="#pr-Sha"><region type="province">Shansi</region></placeName> e lo <placeName ref="#pr-Sze"><region type="province">Szechuan</region></placeName>;
+                    provincia che venne di nuovo divisa nel <date when="1286">1286</date>. La città è situata sulla destra
+                    del fiume <geogName type="river">Weiho</geogName> affluente del <geogName type="river">Fiume Giallo</geogName>. Come già dall’antichità, è tuttora
+                    importante centro commerciale per la sia posizione sulla cosidetta <soCalled>"via della
+                        seta"</soCalled>. Tra i suoi numerosi monumenti artistici si trova la statua di Buddha
+                    celebre per essere la più colossale di tutta la <placeName><region type="country">Cina</region></placeName>.</note>
+            </div>
+            
+            <div type="chapter" n="95">
+                
+                <head><num value="95">95</num>. Della città di <placeName ref="#ci-Che"><settlement type="city">Chengianfu</settlement></placeName>.</head>
+                <p>Quando ci si allontana dalla città sopraddetta e si cavalca per <num value="8">otto</num> giorni verso
+                    il ponente, si incontrano lungo il cammino numerose città e castelli, e commerci
+                    e industrie e bei giardini e case. Vi dico inoltre che la città è piena di
+                    gelsi; gli abitanti sono idolatri; la caccia e l’uccellagione sono abbondanti.
+                    Percorse queste <num value="8">otto</num> giornate, si trova la nobile città di <placeName ref="#ci-Che"><settlement type="city">Chengianfu</settlement></placeName>, che è
+                    grande e bella e capoluogo di un regno. Anticamente il regno fu prospero e
+                    potente; ora il sovrano è il figlio del <persName ref="#GC"> <roleName>Can</roleName></persName> chiamato <persName ref="#MA"><forename>Malangai</forename></persName><ref target="#ch95_a1" type="noteAnchor"><hi rend="superscript">1</hi></ref> ed è stato
+                    incoronato. In questo territorio è sviluppato il com- <pb n="128"/> mercio, e vi
+                    sono molte cose preziose; vi si lavorano drappi d’oro e di sete in varie fogge e
+                    si fabbricano arnesi per gli eserciti. Di tutte le cose necessarie all’uomo per
+                    vivere qui hanno grande abbondanza e a buon mercato. La città è ponente, gli
+                    abitanti sono idolatri. Fuori dal paese c’è il palazzo del <persName ref="#MA"><roleName>re </roleName><forename>Mangalai</forename></persName>, che è
+                    bellissimo, come ora vi dirò. Si trova in una grande pianura, dove c’è un fiume
+                    e una palude e numerose sorgenti. Tutto intorno c’è un muro lungo ben <measure><num value="5">cinque</num>
+                        miglia</measure>, munito di merli e ben costruito; e nel centro del muro sta il palazzo,
+                    bello e grande come meglio non lo si potrebbe ideare: ha molte belle sale e
+                    belle camere, tutte dipinte in oro battuto. <persName ref="#MA"><forename>Mangalai</forename></persName> governa bene il suo regno,
+                    con giustizia e senno ed è molto amato: nel paese grande divertimento è la
+                    caccia. Ora partiamo di qui e vi dirò di una provincia molto addentrata tra le
+                    montagne che si chiama <placeName ref="#pr-Con"><region type="province">Concun</region></placeName><ref target="#ch95_a2" type="noteAnchor"><hi rend="superscript">2</hi></ref>. </p>
+                <note xml:id="ch95_a1" type="footnote">1. Figlio terzogenito di <persName ref="#GC"><forename>Cubilai</forename> <roleName>Can</roleName></persName>.
+                    Diventato sovrano del territorio a lui assegnato nel <date when="1272">1272</date>, pose la sua capitale
+                    a <placeName ref="#ci-Che"><settlement type="city">Chengianfu</settlement></placeName>, al centro del regno. Nel <date when="1273">1273</date> ebbe il titolo di <addName type="epithet">Chin</addName> e da allora
+                    arricchì la città di numerosi monumenti. Morì nel <date when="1280">1280</date>.</note>
+                <note xml:id="ch95_a2" type="footnote">2. L’identificazione di questa provincia è
+                    dubbia; le montagne potrebbero essere la catena del <geogFeat>Tsing-ling</geogFeat> che si trova tra
+                    il fiume <geogName type="river">Wei</geogName> e il fiume <geogName type="river">Han</geogName>. </note>
+            </div>
+            
+            <div type="chapter" n="96">
+                <head><num value="96">96</num>. Della provincia di <placeName ref="#pr-Con"><region type="province">Concun</region></placeName>.</head>
+                <p> Quando si lascia il palazzo di <persName ref="#MA"><forename>Mangalai</forename></persName> si va verso ponente per <num value="3">tre</num> giorni in
+                    una bellissima pianura, e lungo la via si trovano numerose città e castelli. Gli
+                    abitanti vivono di commercio e artigianato e hanno molta seta. Alla fine delle
+                    <num value="3">tre</num> giornate si incontrano montagne e valli che appartengono alla provincia di
+                    <placeName ref="#pr-Con"><region type="province">Concun</region></placeName>. Sui monti e nelle valli ci sono molte città e castelli. La gente è
+                    idolatra e vivono del lavoro della terra e dei prodotti dei boschi, perché i
+                    boschi sono tanti e in essi vivono molte bestie selvatiche: leoni, orsi,
+                    caprioli, lupi cervieri<ref target="#ch96_a1" type="noteAnchor"><hi rend="superscript">1</hi></ref>, daini, cervi, e altre ancora, dalle quali <pb n="129"
+                    /> ricavano molti guadagni. In questo paese si cavalca per <num value="20">venti</num> giorni
+                    attraverso monti e valli e boschi, ma si trovano egualmente città e buoni
+                    alberghi. Ora ci allontaneremo di qui e vi racconterò di un’altra provincia. </p>
+                <note xml:id="ch96_a1" type="footnote">1. Vedi <num value="78">78</num>, nota <num value="1">1</num>.</note>
+            </div>
+            
+            <div type="chapter" n="97">
+                <head><num value="97">97</num>. Della provincia di <placeName ref="#pr-Acb"><region type="province">Acbaluc Mangi</region></placeName><ref target="#ch97_a1" type="noteAnchor"><hi rend="superscript">1</hi></ref>.</head>
+                <p>Quando si parte e si sono cavalcate queste <num value="20">venti</num> giornate tra le montagne di
+                    <placeName ref="#pr-Con"><region type="province">Concun</region></placeName>, ci si trova in una provincia chiamata <placeName ref="#pr-Acb"><region type="province">Acbaluc Mangi</region></placeName>. Vi sono numerose
+                    città e castelli, situati a ponente, gli abitanti sono idolatri e vivono di
+                    commerci e industrie; lo zenzero è così abbondante che viene diffuso in tutto il
+                    <placeName ref="#pr-Cat"><region type="province" >Catai</region></placeName><ref target="#ch97_a2" type="noteAnchor"><hi rend="superscript">2</hi></ref> e se ne trae grande guadagno. La provincia produce riso e grano e altre
+                    biade in quantità a buon mercato; è ricca di ogni bene. Il territorio principale
+                    è chiamato <placeName ref="#pr-Acb"><region type="province">Acbaluc Mangi</region></placeName>, vale a dire "un territorio al confine di <region type="province" ref="#pr-Man">Mangi</region>".
+                    Questa contrada si estende per <num value="2">due</num> giornate, dopo di che si incontrano grandi
+                    vallate, altre montagne e molti boschi, si va quindi avanti per <num value="20">venti</num> giorni
+                    superando numerose città e castelli. La gente è idolatra, vive dei frutti della
+                    terra e cacciando uccelli e bestie grosse: vi sono leoni, orsi, lupi cervieri,
+                    daini e caprioli. Qui vi è una quantità di quelle bestiole da cui si estrae il
+                    muschio. Adesso ci allontaniamo di qui e vi parlerò dettagliatamente, e per
+                    ordine, di altre contrade, come voi udirete. <pb n="130"/>
+                </p>
+                <note xml:id="ch97_a1" type="footnote">1. Questo nome deriva da una forma turca
+                        <term xml:lang="turco">Aq baliq</term> (cioè <soCalled>"città
+                        bianca"</soCalled>) cui è stato aggiunto <region type="province"
+                        ref="#pr-Man">Mangi</region> per indicare che è al confine del <region
+                        type="province" ref="#pr-Man">Mangi</region>, forse perché esisteva una
+                    città dallo stesso nome nel <placeName ref="#pr-Cat"><region type="province"
+                            >Catai</region></placeName>. La regione è quella attraversata dallo
+                        <geogName type="river">Hangkiang</geogName>, di cui <placeName ref="ci-Han"
+                            ><settlement type="city">Han-chung</settlement></placeName> fu è la
+                    città principale.</note>
+                <note xml:id="ch97_a2" type="footnote">2. Vedi <num value="18">18</num>, nota <num value="8">8</num></note>
+            </div>
+            
+            <div type="chapter" n="98">
+                <head><num value="98">98</num>. Della provincia di <placeName ref="#pr-Sin"><region type="province">Sindufu</region></placeName>.</head>
+                <p> Come ho detto, quando si è cavalcato per <num value="20">venti</num> giornate verso ponente, si trova
+                    una provincia, anch’essa denominata del confine di <region type="province" ref="#pr-Man">Mangi</region> e si chiama <placeName ref="#pr-Sin"><region type="province">Sindufu</region></placeName>. La
+                    capitale si chiama <placeName ref="#ci-Sin"><settlement type="city">Sindufu</settlement></placeName><ref target="#ch98_a1" type="noteAnchor"><hi rend="superscript">1</hi></ref>; anticamente fu una grande nobile città e vi
+                    dimorava un re grande e ricco. Il perimetro delle mura è di ben <measure><num value="20">venti</num> miglia</measure>.
+                    Accade che il re morì e lasciò <num value="3">tre</num> figli; questi divisero la città in <num value="3">tre</num> parti
+                    e ognuno circondò il suo terzo di mura all’interno. Tutti divennero re e tutti
+                    ebbero un grande potere perché ricchi di terre e di beni, data che già loro
+                    padre era molto potente. Ma il <persName><addName type="epithet">Gran</addName> <roleName>Can</roleName></persName> spodestò questi <num value="3">tre</num> e si prese la terra
+                    per sé. Dovete sapere che nel centro della città passa un fiume d’acqua dolce,
+                    largo ben <measure>mezzo miglio</measure> e pieno di pesci. Sfocia nel <geogName type="ocean">Mare Oceano</geogName>, a per arrivare
+                    là occorrono da <num value="80">ottanta</num> a <num value="100">cento</num> giornate; il nome del fiume è <geogName type="river">Chiansui</geogName><ref target="#ch98_a2" type="noteAnchor"><hi rend="superscript">2</hi></ref>, bagna
+                    molte città e castelli; ed è percorso da un numero di navi tale che non si
+                    crederebbe se non le <pb n="131"/> si vedessero, una quantità di mercanti vanno
+                    su e giù, ed è una cosa meravigliosa. Il fiume è così largo che pare addirittura
+                    un mare. Nel centro della città sopra il fiume vi è un ponte tutto in pietra,
+                    lungo <measure>mezzo miglio</measure> e largo <measure>otto passi</measure>; colonne di marmo sostengono la copertura
+                    del ponte. Tale copertura è molto bella e tutta decorata con magnifiche pitture;
+                    sul ponte vi sono parecchie casette dove si esercitano il commercio e
+                    l’artigianato: ma sono casette di legno che si montano la mattina e si smontano
+                    la sera. Qui sta anche il gabelliere<ref target="#ch98_a3" type="noteAnchor"><hi rend="superscript">3</hi></ref> del signore che percepisce la tassa sulle
+                    mercanzie vendute sul ponte; quella tassa rende ben <num value="1000">mille</num> bisanti d’oro
+                    all’anno. La gente è tutta idolatra. Partendo da questa città e cavalcando
+                    <num value="5">cinque</num> giorni attraverso pianure e vallate si incontrano molte città e castelli.
+                    Gli uomini vivono dei frutti della terra e vi sono bestie selvatiche, quali
+                    leoni, orsi e altre; qui si fabbricano bei veli e drappi <note type="addition" resp="#MVM">dorati</note>. Appartengono
+                    alla provincia di <placeName ref="#pr-Sin"><region type="province">Sindufu</region></placeName>. Terminate queste <num value="5">cinque</num> giornate di cui vi ho detto,
+                    si trova una provincia molto rovinata, chiamata <placeName ref="#pr-Teb"><region type="province">Tebet</region></placeName>; ne parleremo qui di
+                    seguito. <pb n="132"/>
+                </p>
+                <note xml:id="ch98_a1" type="footnote">1. Provincia e città hanno adesso
+                    rispettivamente il nome di <placeName ref="#pr-Sze"><region type="province">Szuchuan</region></placeName> e <settlement>Cheng-tu</settlement>. La provincia è fittamente
+                    popolata, da Cinesi nella parte orientale pianeggiante, da popolazione di
+                    origine birmana e tibetana nella parte occidentale che è prevalentemente
+                    montuosa. La città di <settlement>Cheng-tu</settlement>, situata nel bacino del fiume <geogName type="river">Min</geogName>, affluente
+                    dello <geogName type="river">Yang-tze</geogName> (il <geogName type="river">Chiansui</geogName> di <persName><forename>Marco</forename> <surname>Polo</surname></persName>), è una delle più antiche città della
+                    <placeName><region type="country">Cina</region></placeName> e attualmente un importante centro industriale.</note>
+                <note xml:id="ch98_a2" type="footnote">2. È il fiume <geogName type="river">Yang-tze kiang</geogName> o <geogName type="river">Fiume Azzurro</geogName>.
+                    Nasce al centro dell’altipiano del <placeName ref="#pr-Teb"><region type="province">Tibet</region></placeName> a <measure><num value="4800">4800</num> m</measure> sul livello del mare; il corso
+                    superiore (dalle sorgenti fino a Mingshan) è considerato un affluente perché in
+                    origine le acque si univano a quelle del <geogName type="river">Fiume Rosso</geogName>; il corso medio (da
+                    <settlement>Pingshan</settlement> a <settlement>Ichang</settlement>) è navigabile e costituisce la grande via di comunicazione
+                    dello <placeName ref="#pr-Sze"><region type="province">Szuchuan</region></placeName>; il corso inferiore (da <settlement>Ichang</settlement> a <settlement>Nanchino</settlement>) sviluppa una quantità
+                    di meandri e numerosi canali che formano complessivamente una vasta pianura
+                    alluvionale. L’ampia foce a delta, cioè il tratto da <settlement>Nanchino</settlement> all’<geogName type="ocean">Oceano
+                        Pacifico</geogName> si divide in <num value="3">tre</num> ampi canali navigabili, uno dei quali percorribile
+                    anche da bastimenti di grandi dimensioni. Il sistema dello <geogName type="river">Yang-tze</geogName> è una delle
+                    maggiori reti di canali nel mondo.</note>
+                <note xml:id="ch98_a3" type="footnote">3. Chi è addetto a riscuotere le gabelle, cioè i dazi e le imposte.</note>
+            </div>
+            
+            <div type="chapter" n="99">
+                <head><num value="99">99</num>. Della provincia di <placeName ref="#pr-Teb"><region type="province">Tebet</region></placeName><ref target="#ch99_a1" type="noteAnchor"><hi rend="superscript">1</hi></ref>.</head>
+                <p>Dopo le <num value="5">cinque</num> giornate di cui vi ho detto, si trova una provincia che <persName ref="MC"><forename>Mongu</forename> <roleName>Can</roleName></persName><ref target="#ch99_a2" type="noteAnchor"><hi rend="superscript">2</hi></ref>
+                    devastò con la guerra; ci sono molte città e castelli tutti rovinati. Qui
+                    esistono delle canne spesse <measure><num value="4">quattro</num> spanne</measure>, lunghe <measure><num value="15">quindici</num> passi</measure>, con i nodi
+                    distanti tra loro <measure><num value="3">tre</num> palmi</measure>. Dovete sapere che i mercanti e i viandanti tagliano
+                    quelle canne la notte e le mettono ad ardere sul fuoco, perché bruciando
+                    provocano scoppi così sonori che i leoni, gli orsi e le altre fiere si
+                    spaventano e fuggono e non si avvicinerebbero al fuoco per nulla al mondo. Gli
+                    uomini fanno questo per paura delle bestie feroci, dato che ce ne sono molte. Le
+                    canne scoppiano perché, mettendole sul fuoco ancora verdi, si contorcono e si
+                    spaccano a metà e spaccandosi fanno un tale rumore che si sentono lontano <measure><num value="10">dieci</num>
+                        miglia</measure> e più nella notte; è un chiasso così terribile che chi non è abituato a
+                    udirlo <pb n="133"/> ne avrebbe una gran paura. I cavalli che non vi sono
+                    avvezzi si spaventano talmente che rompono la cavezza e tutti i finimenti e
+                    scappano; e ciò avviene sovente. Per rimediarvi, ai cavalli non abituati legano
+                    tutte e <num value="4">quattro</num> le zampe, bendano gli occhi e turano le orecchie, in modo che
+                    non possono fuggire quando sentono lo scoppio. Così si salvano la notte gli
+                    uomini e le loro bestie. Chi va per queste contrade per <num value="20">venti</num> giornate non trova
+                    né rifugi né cibo, deve quindi portare vivande per sé e per le sue bestie
+                    sufficienti per le <num value="20">venti</num> giornate; trova invece fiere cattive e bestie
+                    selvatiche molto pericolose. Poi si trovano numerosi castelli e case dove vi è
+                    l’uso di dare marito alle femmine nel modo seguente. Dovete sapere che nessun
+                    uomo piglierebbe una vergine per moglie, dicono che le donne non valgono nulle
+                    se non hanno già praticato molti uomini. Quando passano nel paese i mercanti, le
+                    vecchie portano le loro figlie in istrada, negli alberghi, nelle tende, a gruppi
+                    di <num value="20">venti</num> o <num value="30">trenta</num>; le fanno coricare con i mercanti e poi le maritano. Dopo che
+                    il mercante ha fatto ciò che ha voluto, egli deve donare alla ragazza qualche
+                    gioiello, affinché essa possa dimostrare come già abbia avuto a che fare con
+                    altri uomini; se una ha più gioielli vuol dire che ha avuto più amanti e trova
+                    più presto marito. Una donna prima di potersi sposare deve avere almeno <num value="20">venti</num>
+                    segnali al collo per mostrare che è stata con tanti uomini; quella che ne ha di
+                    più è ritenuta la migliore e dicono che è più graziosa delle altre. La
+                    popolazione è idolatra e malvagia perché non ritiene affatto un peccato il fare
+                    il male e il rubare; di qui provengono i migliori scherani<ref target="#ch99_a3" type="noteAnchor"><hi rend="superscript">3</hi></ref> del mondo. Vive dei
+                    frutti della terra, di besti <pb n="134"/>e d’uccelli. In quel territorio sono
+                    numerose le bestie da cui si estrae il muschio, e poiché questa gente cattiva
+                    possiede molti buoni cani prendono un gran numero di queste bestiole. Gli
+                    abitanti non hanno né monete né fogli come quelli del <persName><addName type="epithet">Gran</addName> <roleName>Can</roleName></persName>, ma usano il sale
+                    come moneta. Essi sono vestiti miseramente perché i loro abiti sono fatti di
+                    stracci, di pelli e di tela di cotone; hanno un linguaggio a sé; il paese si
+                    chiama <placeName ref="#ci-Teb"><region type="province">Tebet</region></placeName>. E questo <placeName ref="#pr-Teb"><region type="province">Tebet</region></placeName> è una provincia grandissima e ve ne parlerò
+                    brevemente, come udirete. </p>
+                <note xml:id="ch99_a1" type="footnote">1. Oggi <placeName ref="#pr-Teb"><region type="province">Tibet</region></placeName>, la regione che si estende
+                    dall’<placeName><region type="country">India</region></placeName> alla <placeName><region type="country">Cina</region></placeName>, in particolare la parte settentrionale già sottomessa da
+                    <persName ref="CC"><forename>Cinghys</forename> <roleName>Can</roleName></persName> nel <date when="1208">1208</date>. La restante conquista non fu opera personale di <persName ref="MC"><forename>Mongu</forename> <roleName>Can</roleName></persName>,
+                    come asserisce <persName><forename>Marco</forename> <surname>Polo</surname></persName>, ma di uno dei suoi più valenti generali. La regione è
+                    già citata nella geografia di <persName><forename>Tolomeo</forename></persName>, ma il nome compare nella forma attuale
+                    solo in <persName><forename>Guglielmo</forename> di <placeName>Rubruk</placeName></persName>, insieme a notizie analoghe a quelle fornite da
+                    <persName><forename>Marco</forename> <surname>Polo</surname></persName>; questi non la visitò mai personalmente, tuttavia la sua descrizione
+                    è la prima data da un occidentale con tanti particolari tutti perfettamente
+                    attendibili. Le più antiche notizie di un regno tibetano risalgono al secolo
+                    <date from="0601" to="0700">VII</date>; regno che nonostante le lotte con i paesi limitrofi riuscì a sopravvivere
+                    indipendente, grazie alla sua posizione geografica, fino al secolo <date from="1201" to="1300">XIII</date> quando i
+                    Mongoli ne invasero una parte. Il <placeName ref="#pr-Teb"><region type="province">Tibet</region></placeName> continuò ad essere governato dai lama,
+                    capi religiosi, anche sotto il protettorato dei Cinesi che durò alcuni secoli e
+                    durante le lotte tra gli Inglesi che dall’<placeName><region type="country">India</region></placeName> cercavano di allacciare
+                    relazioni con i Tibetani e i Cinesi; tali lotte terminarono praticamente solo
+                    nel <date when="1951">1951</date>, anno in cui il <placeName ref="#pr-Teb"><region type="province">Tibet</region></placeName> cessò di essere uno stato indipendente e divenne
+                    una regione autonoma nell’ambito della <placeName><region type="country">Repubblica Popolare Cinese</region></placeName>.</note>
+                <note xml:id="ch99_a2" type="footnote">2. Vedi <num value="47">47</num>, nota <num value="2">2</num>.</note>
+                <note xml:id="ch99_a3" type="footnote">3. Con questo termine <persName><forename>Marco</forename> <surname>Polo</surname></persName> intente
+                    <soCalled>"predoni"</soCalled>, cioè quei Caraunas dediti ad assaltare le città e ucciderne gli
+                    abitanti. Questi erano reputati i migliori, cioè i più abili nel loro mestiere.
+                </note>
+            </div>
+            
+            <div type="chapter" n="100">
+                <head><num value="100">100</num>. Ancora della provincia di <placeName ref="#pr-Teb"><region type="province">Tebet</region></placeName>.</head>
+                <p>Il <placeName ref="#pr-Teb"><region type="province">Tebet</region></placeName> è una provincia grandissima; gli abitanti hanno un linguaggio proprio,
+                    sono idolatri e confinano con il <region type="province" ref="#pr-Man">Mangi</region> e con molte altre province. Essi sono dei
+                    gran ladroni. Il territorio è così esteso che comprende <num value="8">otto</num> grandi regni e una
+                    quantità di città e di castelli. In molti luoghi vi sono fiumi e laghi, altrove
+                    montagne dove si trovano in grande quantità pagliuzze d’oro. In questa provincia
+                    si commercia il corallo<ref target="#ch100_a1" type="noteAnchor"><hi rend="superscript">1</hi></ref>, che costa molto caro perché ne fanno collane per i
+                    loro idoli e per le loro donne ed è un segno di gioia. Vi si fabbricano in
+                    quantità cammellotti<ref target="#ch100_a2" type="noteAnchor"><hi rend="superscript">2</hi></ref> e drappi d’oro e di seta; crescono qui molte spezie mai
+                    viste nei nostri paesi. Si trovano da queste parti gli incantatori e gli
+                    astrologi più sapienti di tutta la regione. Fanno delle cose mediante arti
+                    diaboliche che non si vogliono raccontare in questo libro perché i lettori se ne
+                    stupireb- <pb n="135"/> bero troppo; e hanno pessimi costumi. Possiedono cani
+                    grandissimi e mastini alti come asini che sono bravi a pigliare le bestie
+                    selvatiche. Hanno anche cani da caccia di diverse razze; qui nascono inoltre
+                    molti falconi pellegrini assai abili e che volano bene. Ora lasciamo questa
+                    provincia del <placeName ref="#pr-Teb"><region type="province">Tebet</region></placeName> e vi parlerò di un’altra provincia e regione che
+                    appartengono al <persName><addName type="epithet">Gran</addName> <roleName>Can</roleName></persName>. Tutte le provincie e regioni descritte in questo libro
+                    appartengono al <persName><addName type="epithet">Gran</addName> <roleName>Can</roleName></persName>, salvo quelle di cui si parla al principio, che sono
+                    sotto il dominio del figlio di <persName><forename>Argon</forename></persName><ref target="#ch100_a3" type="noteAnchor"><hi rend="superscript">3</hi></ref> , come ho detto. E perciò, tranne quelle,
+                    tutte le altre sono sotto il <persName><addName type="epithet">Gran</addName> <roleName>Can</roleName></persName>; se non trovate scritto altrimenti è
+                    sottinteso che è così. Ora tralasciamo questo argomento e vi racconterò della
+                    provincia di <placeName ref="pr-Gai"><region type="province">Gaindu</region></placeName><ref target="#ch100_a4" type="noteAnchor"><hi rend="superscript">4</hi></ref>. </p>
+                <note xml:id="ch100_a1" type="footnote">1. Materiale usato per fabbricare oggetti
+                    ornamentali. È costituito dallo scheletro ramificato di minuscoli vertebrati
+                    acquatici che vivono in colonie sostenute da impalcature calcaree. Tali
+                    agglomerati compatti e induriti assumono la consistenza della pietra e colore
+                    vario, ma prevalentemente rosso.</note>
+                <note xml:id="ch100_a2" type="footnote">2. Vedi <num value="61">61</num>, nota <num value="4">4</num>.</note>
+                <note xml:id="ch100_a3" type="footnote">3. Cioè appartengono al signore dei Tartari,
+                    tranne quelle sono sotto il dominio del re dei Persiani</note>
+                <note xml:id="ch100_a4" type="footnote">4. È la regione di <placeName><region>Kien-chang</region></placeName>, nell’ansa del
+                    fiume <geogName type="river">Yang-tze</geogName>. Al tempo dei Mongoli faceva parte dello <placeName ref="#pr-Yun"><region type="province">Yunnan</region></placeName>.</note>
+            </div>
+            
+            <div type="chapter" n="101">
+                <head><num value="101">101</num>. Della provincia di <placeName ref="pr-Gai"><region type="province">Gaindu</region></placeName>.</head>
+                <p><placeName ref="pr-Gai"><region type="province">Gaindu</region></placeName> è una provincia verso ponente e non ha più un re, perché è sotto il <persName><addName type="epithet">Gran</addName>
+                    <roleName>Can</roleName></persName>. La gente è idolatra; le città e i castelli sono numerosi. Vi è un lago in
+                    cui si trovano molte perle, ma il <persName><addName type="epithet">Gran</addName> <roleName>Can</roleName></persName> non vuole che le si prendano, perché
+                    così facendo diventerebbero troppo comuni e non varrebbero più nulla; il gran
+                    sire ne fece pescare solamente quante ne occorrono a lui, chi ne prende di più è
+                    condannato a morte. Vi è anche una montagna dove si trovano in grande quantità
+                    delle pietre, che si chiamano turchesi<ref target="#ch101_a1" type="noteAnchor"><hi rend="superscript">1</hi></ref> e sono molto belle. Il signore non le
+                    lascia raccogliere se non su suo ordi- <pb n="136"/> ne. Dovete sapere che in
+                    questo paese vi è un bellissimo uso: non è ritenuta una vergogna se un
+                    forestiero o chiunque altro va a letto con la moglie, la figlia o qualsiasi
+                    donna della casa. Anzi è considerata una buona cosa e dicono che gli idoli
+                    concederanno loro beni temporali; per questo dànno con tanta generosità le loro
+                    femmine ai forestieri, come ora vi dirò. Dovete sapere che quando un uomo di
+                    questo paese vede che gli viene un forestiero in casa, ne esce immediatamente e
+                    ordina alla moglie e alle altre donne di fare tutto ciò che il forestiero
+                    desidera, come se fosse lui stesso; va fuori in una sua campagna o altrove,
+                    finché c’è il forestiero, talvolta anche <num value="3">tre</num> giorni. Questi attacca il cappello
+                    alla finestra, per far vedere che è ancora lì e il marito o altri non cerchi di
+                    entrare; finché c’è quel segnale il padrone non torna mai a casa; questo uso
+                    vale in tutta la provincia. Gli abitanti si procurano la moneta nel modo
+                    seguente. Prendono il sale, lo fanno cuocere e lo buttano in una forma; questa
+                    forma pesa <measure>mezza libbra</measure><ref target="#ch101_a2" type="noteAnchor"><hi rend="superscript">2</hi></ref>; <num value="80">ottanta</num> di queste forme di sale valgono una misura di
+                    oro fino<ref target="#ch101_a3" type="noteAnchor"><hi rend="superscript">3</hi></ref>, e costituiscono la moneta spicciola da spendere. Hanno una quantità
+                    di quelle bestiole da cui si ricava il muschio. Essi hanno moltissimi pesci, li
+                    pescano nel lago di cui ho detto, dove si trovano le perle; hanno anche tanti
+                    leoni, lupi cervieri, orsi, daini, caprioli, cervi, e così pure uccelli d’ogni
+                    specie. Vino d’uva non ne hanno, ma fanno il vino di grano e di riso con molte
+                    spezie ed è una bevanda buonissima. In questa provincia si coltivano garofani in
+                    abbondanza. C’è una pianticella che fa le foglie grandi come il lauro, ma un po’
+                    più lunghe e strette e il fiore bianco piccolo come il garofano. Hanno in
+                    abbondan- <pb n="137"/> za zenzero e cannella<ref target="#ch101_a4" type="noteAnchor"><hi rend="superscript">4</hi></ref> e altre spezie che non crescono
+                    nei nostri paesi. Ora lasciamo questo argomento, vi racconterò di questo stesso
+                    paese più avanti. Quando si parte da <placeName ref="pr-Gai"><region type="province">Gaindu</region></placeName> si cavalca per <num value="10">dieci</num> giorni
+                    incontrando castelli e città, e tutta la gente ha i costumi e i modi che vi ho
+                    descritto. Finite le <num value="10">dieci</num> giornate si arriva a un fiume chiamato <geogName type="river">Brius</geogName><ref target="#ch101_a5" type="noteAnchor"><hi rend="superscript">5</hi></ref> e qui
+                    termina la provincia di <placeName ref="pr-Gai"><region type="province">Gaindu</region></placeName>; in questo fiume si trova una quantità di oro in
+                    pagliuzze e da quelle parti è abbondante la cannella. Il fiume sfocia nel <geogName type="ocean">Mare
+                        Oceano</geogName>. Del fiume non c’è altro da raccontare, diremo invece di un’altra
+                    provincia chiamata <placeName ref="pr-Car"><region type="province">Caragian</region></placeName><ref target="#ch101_a6" type="noteAnchor"><hi rend="superscript">6</hi></ref>, come udirete tra poco. </p>
+                <note xml:id="ch101_a1" type="footnote">1. Vedi <num value="25">25</num>, nota <num value="1">1</num>.</note>
+                <note xml:id="ch101_a2" type="footnote">2. Coma la <measure>libbra</measure>, anche la <measure>mezza libbra</measure> era
+                    una misura di peso variabile da una località a un’altra.</note>
+                <note xml:id="ch101_a3" type="footnote">3. Cioè puro, o mescolato solo in minima
+                    parte con altro metallo.</note>
+                <note xml:id="ch101_a4" type="footnote">4. Droga molto profumata usata in cucina. La
+                    si ricava dalla corteccia della pianta omonima appartenente alla famiglia delle
+                    Lauracee.</note>
+                <note xml:id="ch101_a5" type="footnote">5. È il nome del corso superiore dello
+                    <geogName type="river">Yang-tze</geogName>, il tratto fino alla confluenza del suo affluente <geogName type="river">Min</geogName>.</note>
+                <note xml:id="ch101_a6" type="footnote">6. Regione che corrisponde al moderno
+                    <placeName ref="#pr-Yun"><region type="province">Yunnan</region></placeName>, provincia della <placeName><region>Cina sudoccidentale</region></placeName>; è attraversata a nord dal fiume
+                    <geogName type="river">Mekong</geogName>, ma si estende prevalentemente nel bacino del <geogName type="river">Fiume Rosso</geogName>.</note>
+            </div>
+            
+            <div type="chapter" n="102">
+                <head><num value="102">102</num>. Della provincia di <placeName ref="pr-Car"><region type="province">Caragian</region></placeName>.</head>
+                <p>Quando si è passato questo fiume si entra nella provincia di <placeName ref="pr-Car"><region type="province">Caragian</region></placeName>, che è
+                    talmente grande da comprendere ben <num value="7">sette</num> regni ed è a ponente; gli abitanti sono
+                    idolatri e sottomessi al <persName><addName type="epithet">Gran</addName> <roleName>Can</roleName></persName>. Il re attuale è figlio del <persName><addName type="epithet">Gran</addName> <roleName>Can</roleName></persName> ed è
+                    ricco e potente, amministra bene la sua terra e la giustizia ed è un uomo prode.
+                    Quando si è attraversato il fiume di cui ho parlato sopra, e si è andanti avanti
+                    per <num value="6">sei</num> giornate, si incontrano numerose città e castelli: è un luogo dove
+                    nascono ottimi cavalli, la gente vive allevando il bestiame e coltivando la
+                    terra. Ha un linguaggio suo proprio, molto difficile da capire. Al termine di
+                    queste <num value="5">cinque</num> giornate si trova <pb n="138"/> la città principale, che è la
+                    capitale del regno e si chiama <placeName ref="ci-Iac"><settlement type="city">Iaci</settlement></placeName><ref target="#ch102_a1" type="noteAnchor"><hi rend="superscript">1</hi></ref>, città molto grande e nobile, piena di
+                    mercanti e artigiani. Le religioni sono diverse: chi adora Maometto e chi gli
+                    idoli, chi è cristiano nestoriano. Vi cresce il grano e il riso in abbondanza,
+                    ma è un paese assai malsano, perciò mangiano riso e fanno il vino di riso e di
+                    spezie, un vino molto chiaro e buono che ubriaca in fretta come quello di uva.
+                    Qui per monete si adoperano conchiglie bianche, che si trovano al mare <note type="addition" resp="#MVM">e se ne
+                        fanno scodelle</note>. <num value="80">Ottanta</num> conchiglie valgono un saggio<ref target="#ch102_a2" type="noteAnchor"><hi rend="superscript">2</hi></ref> d’argento, ossia <num value="2">due</num>
+                    veneziani grossi<ref target="#ch102_a3" type="noteAnchor"><hi rend="superscript">3</hi></ref>, e <num value="8">otto</num> saggi d’argento fine valgono <num value="1">un</num> saggio d’oro fine. Vi
+                    sono numerose saline da cui si estrae tanto sale da rifornire tutto il
+                    territorio; da questo sale il re ricava tanti guadagni. Agli uomini non importa
+                    se uno prende la donna dell’altro, purché tale sia la volontà della donna. C’è
+                    un lago con una circonferenza di ben <measure><num value="100">cento</num> miglia</measure>, in cui vivono molti pesci
+                    grossi di tutte le specie, i migliori del mondo. Gli abitanti mangiano la carne
+                    cruda di ogni genere. I poveri vanno alla macelleria e quando si squarta
+                    l’agnello o il bue e se ne estraggono le budella, essi le prendono, le bagnano
+                    in una salsa di aglio e mangiano, così pure fanno con la carne. I nobili
+                    mangiano anch’essi la carne cruda, ma la fanno tagliuzzare fine fine, poi la
+                    mettono nella salsa e la condiscono con spezie saporite e la mangiano, come noi
+                    la carne cotta. Vi racconterò ancora di questa stessa provincia di <placeName ref="pr-Car"><region type="province">Caragian</region></placeName>. <pb
+                        n="139"/>
+                </p>
+                <note xml:id="ch102_a1" type="footnote">1. È la città di <settlement>Yunnan</settlement>, capoluogo della
+                    provincia omonima, il <placeName ref="pr-Car"><region type="province">Caragian</region></placeName> di <persName><forename>Marco</forename> <surname>Polo</surname></persName>. Il nome attuale è <settlement>Kunming</settlement> ed è un
+                    importante centro commerciale della <placeName><region>Cina sudoccidentale</region></placeName>.</note>
+                <note xml:id="ch102_a2" type="footnote">2. Misura corrispondente alla sesta parte di
+                    un’oncia (l’oncia aveva valori doversi, ma per lo più si aggirava sui <num value="30">30</num>
+                    gr).</note>
+                <note xml:id="ch102_a3" type="footnote">3. Cioè <num value="2">due</num> delle monete d’argento chiamate
+                    <soCalled>"grosso veneziano"</soCalled>.</note>
+            </div>
+            
+            <div type="chapter" n="103">
+                <head><num value="103">103</num>. Ancora della provincia di <placeName ref="pr-Car"><region type="province">Caragian</region></placeName>.</head>
+                <p>Quando si parte dalla città di <placeName ref="ci-Iac"><settlement type="city">Iaci</settlement></placeName> e si va per <num value="10">dieci</num> giornate verso ponente, si
+                    trova la provincia di <placeName ref="pr-Car"><region type="province">Caragian</region></placeName>. La capitale del regno è chiamata <placeName ref="ci-Iac">Caragian</placeName>; gli
+                    abitanti sono idolatri e sono sudditi del <persName><addName type="epithet">Gran</addName> <roleName>Can</roleName></persName>. In questa provincia si
+                    trovano pagliuzze d’oro nel fiume; e nei laghi e sulle montagne vi è dell’oro in
+                    pezzetti più grossi delle pagliuzze, tanto che dànno qui un saggio d’oro per <num value="6">sei</num>
+                    d’argento. Inoltre, come ho detto, si paga con le conchiglie, conchiglie che non
+                    si trovano in questa provincia, ma arrivano dall’<placeName><region type="country">India</region></placeName>. Nascono qui i grossi
+                    serpenti, o coccodrilli, che sono talmente smisurati da stupire chiunque. Sono
+                    orribili a vedersi, e dovete sapere che ce ne sono davvero di quelli lunghi
+                    <measure><num value="10">dieci</num> passi</measure> e grossi <measure><num value="10">dieci</num> palmi</measure><ref target="#ch103_a1" type="noteAnchor"><hi rend="superscript">1</hi></ref>, questi sono i più grandi. Hanno <num value="2">due</num> zampe
+                    davanti vicino alla teste e i piedi sono formati da un’unghia simile
+                    all’artiglio del leone, il capo è enorme e gli occhi grossi come una pagnotta;
+                    la bocca potrebbe inghiottire un uomo in un solo boccone; i denti sono
+                    lunghissimi e l’animale è così smisuratamente grande e feroce che non esiste né
+                    uomo né fiera che non lo spaventi e non ne abbia paura; ce ne sono anche di meno
+                    di <num value="6">sei</num> o <num value="8">otto</num> passi. La maniera per prenderli è la seguente. Essi vivono di
+                    giorno sottoterra per il gran caldo e la notte escono fuori per nutrirsi e
+                    prendono tutte le bestie che riescono ad afferrare; vanno a bere al fiume, al
+                    lago e alle fontane. Sono così grandi e grossi che, quando di notte vanno a bere
+                    o a mangiare, fanno nella sabbia dove passano una fossa tale che pare che vi sia
+                    stata rotolata una botte. I cacciatori che li vogliono ammazzare vedono il
+                    percorso seguito dal serpente; prendono un <pb n="140"/> palo di legno grosso e
+                    robusto in cui conficcano un ferro tagliente come un rasoio e lo nascondono
+                    nella sabbia; di questi arnesi ne fanno parecchi; quando il serpente passa di lì
+                    batte la testa nel ferro così forte che si taglia dal capo al petto, fino
+                    all’ombelico, e quindi muore immediatamente. Così i cacciatori lo prendono;
+                    appena è morto gli estraggono dal corpo il fiele<ref target="#ch103_a2" type="noteAnchor"><hi rend="superscript">2</hi></ref>, che vendono molto caro perché
+                    è la migliore medicina contro i morsi di cani arrabbiati, basta berne il peso
+                    corrispondente a un piccolo denaro<ref target="#ch103_a3" type="noteAnchor"><hi rend="superscript">3</hi></ref>. Quando una donna ha difficoltà a partorire,
+                    dandole da bere un poco di quel fiele, si sgrava subito. In un terzo caso è
+                    utile, se uno ha una escrescenza, spalmandovi sopra il fiele in breve tempo
+                    guarisce. Per queste ragioni il fiele è molto pregiato in quella regione. Anche
+                    la carne si vende, perché è molto buona da mangiare. Dovete sapere che il
+                    serpente si avvicina alla tana dei leoni e degli orsi e ne mangia i piccoli, se
+                    riesce a impadronirsene, e tutte le altre bestie del posto. I cavalli qui sono
+                    grandissimi e molti vengono portati in <placeName><region type="country">India</region></placeName>; tagliano <num value="2">due</num> o <num value="3">tre</num> nodi della
+                    coda, perché non dimenino la coda con il cavaliere in groppa, cosa ritenuta
+                    molto brutta. Essi cavalcano con staffe lunghe come i Francesi, e fabbricano
+                    armi di pelle di bufalo<ref target="#ch103_a4" type="noteAnchor"><hi rend="superscript">4</hi></ref> alla maniera dei Turchi, portano la balestra e lanciano
+                    le frecce avvelenate. Prima che il <persName><addName type="epithet">Gran</addName> <roleName>Can</roleName></persName> li conquistasse seguivano questo
+                    uso: se per caso veniva ospitato in casa di uno di loro un forestiero bello e
+                    saggio, lo uccidevano con il veleno o in altro modo; non facevano questo per
+                    prendergli il denaro, ma perché, dicevano, il senno, la <pb n="141"/> grazia, il
+                    destino di costui sarebbero rimasti in casa loro. Da quando il paese è stato
+                    conquistato dal <persName><addName type="epithet">Gran</addName><roleName>Can</roleName></persName>, non fanno più queste cose per paura che egli li
+                    punisca. Ora lasciamo questa provincia e vi parlerò di un’altra. </p>
+                <note xml:id="ch103_a1" type="footnote">1. Lunghi fino a <measure><num value="20">venti</num> metri</measure> e larghi più di <measure><num value="2">due</num></measure>.</note>
+                <note xml:id="ch103_a2" type="footnote">2. Liquido che secerne il fegato e si
+                    raccoglie nella cistifellea.</note>
+                <note xml:id="ch103_a3" type="footnote">3. Cioè quanto se ne poteva acquistare con
+                    una moneta di valore inferiore al denaro, che era la moneta corrente nel
+                    Medioevo in tutta <region>Europa</region>; <persName><forename>Marco</forename> <surname>Polo</surname></persName> vuole indicare una quantità
+                    piccolissima.</note>
+                <note xml:id="ch103_a4" type="footnote">4. Mammifero appartenente alla razza bovina;
+                    viene allevato soprattutto per la sua pelle che è straordinariamente
+                    robusta.</note>
+            </div>
+            
+            <div type="chapter" n="104">
+                <head><num value="104">104</num>. Della provincia di <placeName ref="pr-Zar"><region type="province">Zardandan</region></placeName>.</head>
+                <p>Quando si parte da <placeName ref="pr-Car"><region type="province">Caragian</region></placeName> e si va verso ponente per <num value="5">cinque</num> giornate, si trova
+                    una provincia chiamata <placeName ref="pr-Zar"><region type="province">Zardandan</region></placeName><ref target="#ch104_a1" type="noteAnchor"><hi rend="superscript">1</hi></ref>. Gli abitanti sono idolatri e sottomessi al <persName ref="#GC"><addName>Gran</addName>
+                    <roleName>Can</roleName></persName>. La città principale si chiama <placeName ref="ci-Voc"><settlement type="city">Vocian</settlement></placeName><ref target="#ch104_a2" type="noteAnchor"><hi rend="superscript">2</hi></ref>. Essi hanno un rivestimento d’oro a
+                    tutti i denti, tanto quelli di sopra quanto quelli di sotto, così che tutta la
+                    dentatura sembra d’oro; questo gli uomini, non le donne. Inoltre gli uomini sono
+                    tutti cavalieri e, secondo i loro costumi, non fanno nulla, tranne andare in
+                    guerra. Le donne fanno tutto ciò che occorre aiutate dagli schiavi. Quando una
+                    donna ha avuto un bambino, il marito si mette a letto e ci sta <num value="40">quaranta</num> giorni e
+                    lava il piccolo e lo accudisce; dicono che fanno così perché la donna ha già
+                    faticato tanto a portarlo e vogliono che ora si riposi. Tutti gli amici vengono
+                    vicino al letto e fanno grandi feste; la moglie si alza dal letto, fa i mestieri
+                    di casa e serve il marito coricato. Qui mangiano ogni ge- <pb n="142"/> nere di
+                    carne cruda e cotta, e riso cotto con la carne. Il vino lo fanno di riso con le
+                    spezie ed è molto buono. Come moneta usano l’oro e le conchiglie e dànno un
+                    saggio d’oro per <num value="5">cinque</num> d’argento, perché la miniera d’argento più vicina è a
+                    <num value="5">cinque</num> mesi; per questo i mercanti fanno grossi guadagni quando lo portano da
+                    così lontano. Questo popolo non ha né idoli né chiese, essi venerano il
+                    capostipite della famiglia e dicono: <q type="spoken">- Da costui noi siamo discesi.</q> Non esiste
+                    né alfabeto, né alcun sistema di scrittura; la cosa però non stupisce perché è
+                    un territorio molto appartato, dove l’estate non si può andare per alcuna
+                    ragione, essendo l’aria così mefitica che un estraneo non vi può assolutamente
+                    vivere. Se <num value="2">due</num> hanno degli affari insieme, fanno delle tacche in un legno e
+                    l’uno ne tiene una metà l’altro l’altra metà; quando chi deve pagare il debito
+                    lo salda, si fa dare l’altra metà del legno con la tacca. In tutte queste
+                    provincie non esistono medici, quando qualcuno si ammala manda a chiamare i
+                    maghi e incantatori; questi, quando sono giunti dal malato e hanno sentito da
+                    lui di quale male soffre, suonano i loro strumenti e cantano e ballano; dopo che
+                    hanno ballato per un poco uno dei maghi cade in terra con la schiuma alla bocca,
+                    tramortito. Il diavolo si è rifugiato nel suo corpo. Egli sta in questo stato a
+                    lungo e pare morto; gli altri maghi gli chiedono della malattia dell’infermo e
+                    di quale ne sia la causa. Quegli risponde che il male gli è venuto perché ha
+                    fatto dispiacere a qualcuno; dicono i maghi: <q type="spoken">- Noi ti preghiamo di perdonarlo e
+                        prendi, in cambio della sua salute, ciò che tu vuoi.</q> Se il malato deve morire,
+                    il tramortito dice: <q type="spoken">- Egli ha fatto tanto dispiacere a quello spirito che non lo
+                        vuole perdonare per nulla al mondo.</q> Se il malato deve guarire, dice lo spirito
+                    che è nel corpo del mago: <q type="spoken">- Prendete il tal numero di montoni con la testa nera,
+                    e tali e tali bevande, tutte molto pregiate, e sacrificate al tale <pb n="143"/>
+                    spirito.</q> Udito questo, i parenti del malato fanno tutto ciò che lo spirito ha
+                    detto, uccidono i montoni, versano il sangue dove ha ordinato; poi fanno cuocere
+                    un montone, o anche più di d’uno, nella casa del malato, dove si trovano molti
+                    di questi maghi oppure delle donne, tante quante lo spirito ha ordinato che
+                    fossero. Quando il montone è cotto e la bevanda preparata, e la gente si è
+                    radunata per mangiare, essi cominciano a cantare e a ballare e a suonare,
+                    gettano del brodo qua e là per la casa, riempiono di fumo d’incenso e di mirra
+                    tutta la casa e la illuminano. Dopo aver fatto questo per un po’, qualcuno si
+                    china e domanda allo spirito se non ha ancora perdonato al malato. Lo spirito
+                    risponde: <q type="spoken">- Non è stato ancora perdonato; fate la tal cosa e sarà perdonato.</q>
+                    Eseguito il suo ordine egli dice: - Sarà guarito completamente. Allora i parenti
+                    dicono: <q type="spoken">- Lo spirito è dalla nostra parte.</q> E dànno grandi segni di gioia,
+                    mangiano il montone e bevono; poi ciascuno torna a casa sua; e il malato
+                    guarisce. Ora lasciamo questo paese e vi parlerò di altri, come udirete. </p>
+                <note xml:id="ch104_a1" type="footnote">1. La regione del <region>Yung-chang</region>. Il termine
+                    <placeName ref="pr-Zar"><region type="province">Zardandan</region></placeName> è la versione persiana del cinese <term>chin-chih</term>, <soCalled>"denti d’oro"</soCalled>, perché gli
+                    abitanti usavano ricoprirsi la dentatura con una lamina d’oro. Lo storico arabo
+                    <persName><forename>Rashid</forename> <surname>ad-Din</surname></persName> narra inoltre che questo popolo non ha altra religione che il
+                    culto degli antenati e non conosce la scrittura. È noto inoltre che vi era
+                    diffuso l’uso dei tatuaggi.</note>
+                <note xml:id="ch104_a2" type="footnote">2. Corrisponde alla città di <settlement>Yuang-chang</settlement>,
+                    situata tra i fiumi <geogName type="river">Mekong</geogName> e <geogName type="river">Saluen</geogName>. <persName><forename>Marco</forename> <surname>Polo</surname></persName> la definisce la capitale degli
+                    <placeName ref="pr-Zar"><region type="province">Zardandan</region></placeName>, ma non è esatto perché il loro territorio si trovava spostato a
+                    sudovest; tuttavia dal <date when="1286">1286</date> la città era sede di un governatorato per un gruppo
+                    di paesi tra cui anche quello degli <placeName ref="pr-Zar"><region type="province">Zardandan</region></placeName>.</note>
+            </div>
+            
+            <div type="chapter" n="105">
+                <head><num value="105">105</num>. Della grande china.</head>
+                <p>Quando si abbandona la provincia di cui vi ho detto sopra, <placeName ref="pr-Zar"><region type="province">Zardandan</region></placeName>, si scende
+                    lungo una grande china per <num value="2">due</num> giornate e mezzo pur camminando in discesa, ma in
+                    quelle <num value="2">due</num> giornate e mezzo non si trova nulla che valga la pena di raccontare,
+                    se non che c’è un grande spiazzo dove <num value="3">tre</num> giorni la settimana ha luogo un
+                    mercato. Qui convengono molti mercanti che portano l’oro e l’argento nessuno può
+                    andare tranne loro stessi, perché è un territorio impervio e separato dagli
+                    altri, <pb n="144"/> e poiché nessuno riesce a raggiungerli, nessuno sa
+                    esattamente dove abitino. Terminate queste <num value="2">due</num> giornate, si trova una provincia
+                    verso mezzogiorno, ai confini dell’<placeName><region type="country">India</region></placeName>, chiamata <placeName ref="pr-Mie"><region type="province">Mien</region></placeName><ref target="#ch105_a1" type="noteAnchor"><hi rend="superscript">1</hi></ref>. Quindi si cavalca per
+                    <num value="15">quindici</num> giorni attraverso luoghi brutti e disabitati, dove vi sono molte selve
+                    e boschi popolati da elefanti e liocorni<ref target="#ch105_a2" type="noteAnchor"><hi rend="superscript">2</hi></ref> e da mole altre bestie d’ogni genere,
+                    ma non si incontrano né uomini né abitazioni. Perciò non parlerò oltre di questa
+                    contrada e vi racconterò una storia, come udirete. </p>
+                <note xml:id="ch105_a1" type="footnote">1. Come regione è la <placeName><region type="country">Birmania</region></placeName>, come città è
+                    <settlement>Pagan</settlement> (odierna <settlement>Tagaung</settlement>) antica capitale della <placeName><region type="country">Birmania</region></placeName>. Il re di questo stato,
+                    <persName><forename>Narathihapat</forename></persName>, rispose negativamente alla richiesta di assoggettarsi a <persName ref="#GC"><forename>Cubilai</forename> <roleName>Can</roleName></persName>
+                    rivoltagli nel <date when="1271">1271</date> dal governatore della provincia di <region>Yunan</region> e nel <date when="1273">1273</date> da
+                    alcuni invitati giunti per lo stesso scopo da <settlement>Pechino</settlement>. I Birmani oltre a non
+                    volersi sottomettere al <persName><addName type="epithet">Gran</addName> <roleName>Can</roleName></persName>, nel <date when="1277">1277</date> invasero il territorio degli
+                    <placeName ref="pr-Zar"><region type="province">Zardandan</region></placeName> appartenente a quest’ultimo; allora <persName ref="#GC"><forename>Cubilai</forename></persName> intraprese <num value="2">due</num> spedizioni,
+                    l’una non riuscita nello stesso anno, la seconda, che invece andò a buon fine,
+                    nel <date when="1283">1283</date> con truppe cinesi al comando di Ngasaunggyan. La <placeName><region type="country">Birmania</region></placeName> fu così
+                    sottomessa, ma la capitale fu presa solo nel <date when="1287">1287</date>. <persName><forename>Marco</forename> <surname>Polo</surname></persName> descrive appunto
+                    l’inizio e la prima fase della guerra contro il <placeName ref="pr-Mie"><region type="province">Mien</region></placeName>.</note>
+                <note xml:id="ch105_a2" type="footnote">2. Descritti nell’antichità e nel Medioevo
+                    come animali favolosi, che avevano press’a poco la figura dei cavalli con un
+                    lungo corno in mezzo alla fronte, i liocorni (o unicorni) sono in realtà i
+                    rinoceronti, grossi mammiferi che vivono in <placeName><region type="country">India</region></placeName>, di colore grigio-bruno e
+                    forniti di un solo corno sul muso di forma allungata.</note>
+            </div>
+            
+            <div type="chapter" n="106">
+                <head><num value="106">106</num>. Della provincia di <placeName ref="pr-Mie"><region type="province">Mien</region></placeName>.</head>
+                <p>Dovete sapere che quando si è cavalcato per <num value="15">quindici</num> giorni attraverso luoghi
+                    così impervi, si trova una città chiamata <placeName ref="ci-Mie"><settlement type="city">Mien</settlement></placeName>, molto grande e nobile; gli
+                    abitanti sono idolatri e sono sudditi del <persName><addName type="epithet">Gran</addName> <roleName>Can</roleName></persName>; hanno una lingua propria. E
+                    in questa città c’è una nobilissima cosa. Anticamente dimorava qui un re molto
+                    ricco; quando morì lasciò detto che ai <num value="2">due</num> lati della sua tomba si dovevano fare
+                    <num value="2">due</num> torri, <num value="1">una</num> d’oro e <num value="1">una</num> <pb n="145"/> d’argento. Vi dirò come sono fatte
+                    queste <num value="2">due</num> torri: sono alte ben <num value="10">dieci</num> passi e grosse in proporzione all’altezza;
+                    <num value="1">una</num> torre è di pietra, tutta coperta all’esterno di un foglio d’oro spesso un
+                    dito, così che a vederla pare tutta d’oro. La cima è tonda ed è piena di
+                    campanelle dorate che suonano ogni volta che sono mosse dal vento. L’altra torre
+                    è d’argento ed è fatta né più né meno come quella d’oro. Il re fece fare le
+                    torri per dimostrare la propria grandiosità e per il bene della propria anima;
+                    vi assicuro che è la più bella cosa del mondo da vedere e di maggior valore. Ora
+                    vi dirò come il <persName><addName type="epithet">Gran</addName> <roleName>Can</roleName></persName> conquistò questa provincia. Egli disse a tutti i
+                    giullari<ref target="#ch106_a1" type="noteAnchor"><hi rend="superscript">1</hi></ref> che erano alla sua corte che voleva che andassero a occupare la
+                    provincia di <placeName ref="pr-Mie"><region type="province">Mien</region></placeName> e li avrebbe fatti accompagnare da capitani e dato loro aiuti.
+                    I giullari dissero che l’avrebbero fatto volentieri; andarono con quei capitani
+                    e quegli aiuti e presero la provincia. Quando giunsero alla città e videro la
+                    magnificenza di quelle torri mandarono a dire al <persName><addName type="epithet">Gran</addName> <roleName>Can</roleName></persName> quanto erano belle e
+                    ricche e come erano state fatte e dove erano e se voleva che essi le
+                    abbattessero e gli inviassero l’oro e l’argento. Il <persName><addName type="epithet">Gran</addName> <roleName>Can</roleName></persName>, udendo che il re
+                    le aveva fatte fare per la sua anima e per essere ricordato, ordinò che non
+                    venissero rovinata, ma rimanessero lì a onore di colui che le aveva fatte fare,
+                    cioè il re di quel paese. La cosa non stupisce perché nessun Tartaro tocca mai
+                    ciò che è appartenuto a un morto. Qui vi sono numerosi elefanti e buoi selvatici
+                    grandi e belli e grande abbondanza di ogni genere di animali. Abbiamo finito di
+                    parlare di questa provincia e vi parlerò di un’altra che si chiama <placeName ref="pr-Ban"><region type="province">Bangala</region></placeName><ref target="#ch106_a2" type="noteAnchor"><hi rend="superscript">2</hi></ref>.</p>
+                <note xml:id="ch106_a1" type="footnote">1. Cantastorie e buffoni che nel Medioevo si
+                    esibivano nei villaggi e nei castelli per divertire signori e popolani.</note>
+                <note xml:id="ch106_a2" type="footnote">2. Si tratta del <placeName ref="pr-Ban"><region type="province">Bengala</region></placeName>, territorio che si
+                    estende tra l’<placeName><region type="country">India</region></placeName> e la <placeName><region type="country">Birmania</region></placeName>. <persName><forename>Marco</forename> <surname>Polo</surname></persName> "deve aver confuso i propri
+                    ricordi e avere parlato effettivamente di una regione diversa". Pare
+                    invece più probabile che egli riferisca notizie a lui raccontate e non tratte da
+                    conoscenze dirette.</note><pb n="146"/>
+            </div>          
+        </body>
+    </text>
+</TEI>
